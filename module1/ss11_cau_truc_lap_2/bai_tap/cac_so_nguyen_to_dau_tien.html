@@ -9,21 +9,19 @@
     let number = +prompt("Nhập n số nguyên tố đầu tiên");
     let count = 0;
     let count1 = 0;
-    for (let N = 2; N < 100; N++) {
+    for (let i = 2; i < 100; i++) {
         if (count1 < number) {
-            for (let i = 1; i <= N; i++) {
-                if (N % i == 0) {
+            for (let j = 1; j <= i; j++) {
+                if (i % j === 0) {
                     count += 1;
                 }
             }
-            if (count == 2) {
-                document.write(N + "<br>");
+            if (count === 2) {
+                document.write(i + "<br>");
                 count1 += 1;
             }
-        } else {
-            continue;
+            count = 0;
         }
-        count = 0;
     }
 </script>
 </body>

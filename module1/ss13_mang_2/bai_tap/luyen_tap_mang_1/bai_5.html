@@ -6,17 +6,16 @@
 </head>
 <body>
 <script>
-    let ketQua = [];
-    let tongSoAm = 0;
-    for (let i = 0; i < 10; i++) {
-        let number = prompt("Nhập 1 số");
-        ketQua.push(number);
-        if (ketQua[i] < 0) {
-            tongSoAm++;
+    let chuoi = prompt("Nhập 1 chuỗi");
+    let mang=chuoi.split();
+    let dem = 0;
+    for (let i = 0; i < mang.length; i++) {
+        if (mang[i] == 'u'||mang[i] =='e'||mang[i] =='o'||mang[i] =='a'||mang[i] =='i') {
+            dem++;
         }
     }
-    console.log(ketQua);
-    document.write("Tổng số nguyên âm trong chuỗi là: " + tongSoAm);
+    console.log(chuoi);
+    document.write("Số nguyên âm trong chuỗi là " + dem);
 </script>
 </body>
 </html>

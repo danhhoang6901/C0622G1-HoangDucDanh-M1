@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function kiemTra() {
+        let doDai = prompt("Nhập độ dài mảng");
+        let kyTu = prompt("Nhập 1 ký tự");
+        let arr = [];
+        let dem = 0;
+        for (let i = 0; i < doDai; i++) {
+            let kyTu1 = prompt("Nhập 1 ký tự để đưa vào mảng");
+            arr.push(kyTu1);
+            if (kyTu === arr[i]) {
+                dem++;
+            }
+        }
+        if (dem > 0) {
+            return dem;
+        } else {
+            return -1;
+        }
+    }
+
+    alert(kiemTra())
+</script>
+</body>
+</html>

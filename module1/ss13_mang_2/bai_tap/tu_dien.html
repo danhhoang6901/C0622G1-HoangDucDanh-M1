@@ -13,7 +13,6 @@
     function dich() {
         let tiengAnh = ["apple", "banana", "orange", "watermelon", "grape"];
         let tiengViet = ["Táo", "Chuối", "Cam", "Dưa hấu", "Nho"];
-        let nhap = document.getElementById("nhap").value;
         let check = 0;
         for (let i = 0; i < tiengAnh.length; i++) {
             if (document.getElementById("nhap").value === tiengAnh[i]) {
@@ -22,7 +21,7 @@
             }
         }
         if (!check) {
-            document.getElementById("show").innerHTML = "Không tìm thấy";
+            document.getElementById("ketQua").innerHTML = "Không tìm thấy";
         }
     }
 </script>
