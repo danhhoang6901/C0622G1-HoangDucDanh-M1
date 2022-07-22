@@ -6,14 +6,9 @@
 </head>
 <body>
 <script>
-    function kiemTra() {
-        let doDai = prompt("Nhập độ dài mảng");
-        let kyTu = prompt("Nhập 1 ký tự");
-        let arr = [];
+    function kiemTra(arr,kyTu) {
         let dem = 0;
-        for (let i = 0; i < doDai; i++) {
-            let kyTu1 = prompt("Nhập 1 ký tự để đưa vào mảng");
-            arr.push(kyTu1);
+        for (let i = 0; i < arr.length; i++) {
             if (kyTu === arr[i]) {
                 dem++;
             }
@@ -24,8 +19,10 @@
             return -1;
         }
     }
-
-    alert(kiemTra())
+    // chương trinh
+    let mang =["1","a","4"];
+    let c = prompt("Nhập 1 ký tự kiểm tra");
+    alert(kiemTra(mang,c));
 </script>
 </body>
 </html>
